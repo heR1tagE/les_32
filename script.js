@@ -28,7 +28,7 @@ function searchMovies(query) {
   loadingIndicator.classList.remove('hidden');
 
   // Виконуємо запит до API
-  fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
+  fetch(`https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
